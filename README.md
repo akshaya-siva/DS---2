@@ -1,3 +1,88 @@
+# Medical Appointment No-Show Prediction
+
+Can we know if a patient won’t show up before the appointment?
+
+🧠Project in a Nutshell
+
+Every missed appointment wastes time, money, and resources. This project uses machine learning to predict whether a patient will skip their medical appointment based on historical and demographic data.
+
+We analyzed, modeled, and fine-tuned multiple ML algorithms to tackle this real-world healthcare problem.
+
+Data Source: Public dataset from Brazilian medical appointments (Kaggle)
+
+---
+
+🚀 What’s Inside
+
+✅ Data Preprocessing
+
+✅ Exploratory Data Analysis (EDA)
+
+✅ Model Training (5 Classifiers)
+
+✅ Hyperparameter Tuning (RandomizedSearchCV)
+
+✅ Model Evaluation & Comparison
+
+✅ All Models Saved as Pickle Files
+
+Technologies
+
+Python, Pandas, NumPy
+
+Scikit-learn, CatBoost
+
+Matplotlib, Seaborn
+
+RandomizedSearchCV for Tuning
+
+Pickle for Model Persistence
+
+# 📊 Data Science Workflow
+
+📦 Data Cleaning
+
+Converted "No-show" column into binary (yes = 1, no = 0)
+
+Dropped irrelevant fields like PatientID, AppointmentID
+
+Checked class balance and handled missing values
+
+🔍 EDA
+
+Visualized no-show rates
+
+Heatmaps to uncover correlations
+
+Class distribution plots
+
+🤖 Model Building
+
+We trained 5 different models:
+
+Logistic Regression
+
+Decision Tree
+
+Random Forest
+
+CatBoost
+
+Gradient Boosting
+
+Then we performed RandomizedSearchCV to tune them and saved both default & tuned versions.
+
+🔍 4. Model Explainability
+
+We chose interpretable models like Logistic Regression and Decision Trees
+
+Tracked how performance changed before and after tuning
+
+Used classification_report for easy metric comparison
+
+---
+
+
 # Model Comparison API
 
 This project provides a FastAPI-based backend for serving machine learning model predictions. It includes endpoints for making predictions using pre-trained models and is designed to be modular and extensible.
