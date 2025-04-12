@@ -67,6 +67,15 @@ backend/
         random_forest.pkl      # Pre-trained random forest model
     tests/
         test_routes.py         # Unit tests for API routes
+frontend/
+    app.py                     # Streamlit dashboard application
+    components/
+        charts.py              # Functions for creating charts
+    hidden_pages/
+        performance_page.py    # Page for visualizing model performance
+        prediction_page.py     # Page for making predictions
+    assets/
+        style.css              # Custom styles for the dashboard
 ```
 
 ---
@@ -107,6 +116,33 @@ backend/
 
 ---
 
+## Frontend Setup
+
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies using `pipenv`:
+   ```bash
+   pipenv install
+   ```
+
+3. Activate the virtual environment:
+   ```bash
+   pipenv shell
+   ```
+
+4. Run the Streamlit dashboard:
+   ```bash
+   pipenv run streamlit run app.py
+   ```
+
+5. Access the dashboard in your browser at:
+   - [http://localhost:8501](http://localhost:8501)
+
+---
+
 ## Testing
 
 1. Navigate to the `backend` directory:
@@ -128,3 +164,6 @@ backend/
 
 ---
 
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
