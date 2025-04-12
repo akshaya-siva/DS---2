@@ -10,6 +10,8 @@ We analyzed, modeled, and fine-tuned multiple ML algorithms to tackle this real-
 
 Data Source: Public dataset from Brazilian medical appointments (Kaggle)
 
+---
+
 
 # Model Comparison API
 
