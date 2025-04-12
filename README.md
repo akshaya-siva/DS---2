@@ -1,3 +1,16 @@
+#Medical Appointment No-Show Prediction
+
+Can we know if a patient won’t show up before the appointment?
+
+🧠Project in a Nutshell
+
+Every missed appointment wastes time, money, and resources. This project uses machine learning to predict whether a patient will skip their medical appointment based on historical and demographic data.
+
+We analyzed, modeled, and fine-tuned multiple ML algorithms to tackle this real-world healthcare problem.
+
+Data Source: Public dataset from Brazilian medical appointments (Kaggle)
+
+
 # Model Comparison API
 
 This project provides a FastAPI-based backend for serving machine learning model predictions. It includes endpoints for making predictions using pre-trained models and is designed to be modular and extensible.
