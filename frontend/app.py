@@ -1,10 +1,17 @@
 import streamlit as st
 from components.charts import plot_metrics_chart, plot_comparison_chart
 import requests
+import os
+import sys
 
+from st_pages import hide_pages, Page
+
+# path_pages=os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))+'/frontend/pages/'
+# print(path_pages)
 # Title and Description
 st.title("Model Comparison Dashboard")
 st.markdown("An interactive dashboard to visualize model performance and make predictions.")
+# hide_pages([Page(os.path.join(path_pages,"__init__.py")), Page(os.path.join(path_pages,"performance_page.py")),Page(os.path.join(path_pages,"prediction_page.py"))])
 
 # Sidebar for navigation
 page = st.sidebar.selectbox("Select Page", ["Model Performance", "Make Predictions"])

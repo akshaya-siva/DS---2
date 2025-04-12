@@ -5,14 +5,10 @@ name = "pypi"
 
 [packages]
 streamlit = "*"
-matplotlib = "*"
-requests = "*"
-contourpy = "*"
-cycler = "*"
-fonttools = "*"
-numpy = "*"
 packaging = "*"
-pillow = "*"
+requests = "*"
+matplotlib = "*"
+st-pages = "*"
 
 [dev-packages]
 
