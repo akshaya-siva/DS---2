@@ -13,6 +13,7 @@ Data Source: Public dataset from Brazilian medical appointments (Kaggle)
 ---
 
 🚀 What’s Inside
+
 ✅ Data Preprocessing
 
 ✅ Exploratory Data Analysis (EDA)
@@ -26,6 +27,7 @@ Data Source: Public dataset from Brazilian medical appointments (Kaggle)
 ✅ All Models Saved as Pickle Files
 
 Technologies
+
 Python, Pandas, NumPy
 
 Scikit-learn, CatBoost
@@ -39,6 +41,7 @@ Pickle for Model Persistence
 # 📊 Data Science Workflow
 
 📦 Data Cleaning
+
 Converted "No-show" column into binary (yes = 1, no = 0)
 
 Dropped irrelevant fields like PatientID, AppointmentID
@@ -46,6 +49,7 @@ Dropped irrelevant fields like PatientID, AppointmentID
 Checked class balance and handled missing values
 
 🔍 EDA
+
 Visualized no-show rates
 
 Heatmaps to uncover correlations
@@ -53,6 +57,7 @@ Heatmaps to uncover correlations
 Class distribution plots
 
 🤖 Model Building
+
 We trained 5 different models:
 
 Logistic Regression
