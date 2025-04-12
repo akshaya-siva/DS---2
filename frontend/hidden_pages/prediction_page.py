@@ -7,7 +7,7 @@ def render_prediction_page():
     """
     st.header("Make Predictions")
     
-    model = st.selectbox('Select Model', ['Logistic Regression', 'Random Forest', 'Gradient Boosting'])
+    model = st.selectbox('Select Model', ['Logistic Regression', 'Random Forest', 'Gradient Boosting','Catboost','Decision Tree'])
     
     feature_1 = st.number_input('Feature 1')
     feature_2 = st.number_input('Feature 2')

@@ -31,19 +31,20 @@ if page == "Model Performance":
     
     st.header("Model Performance Metrics")
     metrics_before_tuning = {
-        "Accuracy": [0.85, 0.88, 0.89],
-        "Precision": [0.83, 0.86, 0.87],
-        "Recall": [0.80, 0.84, 0.85],
-        "F1 Score": [0.81, 0.85, 0.86]
+        "Accuracy": [0.85, 0.88, 0.89, 0.87, 0.90],
+        "Precision": [0.83, 0.86, 0.87, 0.84, 0.88],
+        "Recall": [0.80, 0.84, 0.85, 0.82, 0.87],
+        "F1 Score": [0.81, 0.85, 0.86, 0.83, 0.89],
     }
     metrics_after_tuning = {
-        "Accuracy": [0.88, 0.91, 0.92],
-        "Precision": [0.86, 0.89, 0.90],
-        "Recall": [0.84, 0.87, 0.88],
-        "F1 Score": [0.85, 0.88, 0.89]
+        "Accuracy": [0.88, 0.91, 0.92, 0.90, 0.93],
+        "Precision": [0.86, 0.89, 0.90, 0.87, 0.91],
+        "Recall": [0.84, 0.87, 0.88, 0.85, 0.89],
+        "F1 Score": [0.85, 0.88, 0.89, 0.86, 0.92],
     }
-    models = ["Logistic Regression", "Random Forest", "Gradient Boosting"]
-    
+    # models = ["Logistic Regression", "Random Forest", "Gradient Boosting"]
+    models = ["Catboost", "Random Forest", "Gradient Boosting","Decision Tree","Logistic Regression"]
+
     st.subheader("Before Fine-Tuning")
     plot_metrics_chart(metrics_before_tuning, models)
     
@@ -55,7 +56,9 @@ if page == "Model Performance":
 
 elif page == "Make Predictions":
     st.header("Make Predictions")
-    model = st.selectbox('Select Model', ['Logistic Regression', 'Random Forest', 'Gradient Boosting'])
+    # model = st.selectbox('Select Model', ['Logistic Regression', 'Random Forest', 'Gradient Boosting'])
+    model = st.selectbox('Select Model', ['Logistic Regression', 'Random Forest', 'Gradient Boosting','Catboost','Decision Tree'])
+
     feature_1 = st.number_input('Feature 1')
     feature_2 = st.number_input('Feature 2')
     feature_3 = st.number_input('Feature 3')
