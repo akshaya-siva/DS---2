@@ -116,7 +116,23 @@ frontend/
 
 ---
 
-## Frontend Setup
+## Frontend Description
+
+The frontend is a **Streamlit-based dashboard** that provides an interactive interface for users to:
+
+- **Visualize Model Performance**: View charts and metrics for different machine learning models.
+- **Make Predictions**: Input features and get predictions from the backend API.
+- **Multi-Page Support**: Navigate between pages for performance visualization and prediction.
+
+### Key Components
+
+- **`app.py`**: The main entry point for the Streamlit application.
+- **`components/charts.py`**: Contains reusable functions for creating charts (e.g., bar charts, line charts).
+- **`hidden_pages/performance_page.py`**: Displays model performance metrics and visualizations.
+- **`hidden_pages/prediction_page.py`**: Allows users to input features and make predictions via the backend API.
+- **`assets/style.css`**: Custom CSS for styling the dashboard.
+
+### Frontend Setup
 
 1. Navigate to the `frontend` directory:
    ```bash
