@@ -9,6 +9,7 @@ packaging = "*"
 requests = "*"
 matplotlib = "*"
 st-pages = "*"
+numpy = "*"
 
 [dev-packages]
 
