@@ -85,7 +85,8 @@ Used classification_report for easy metric comparison
 
 # Model Comparison API
 
-The API is still work in progress
+The API is still work in progress.  
+
 This project provides a FastAPI-based backend for serving machine learning model predictions. It includes endpoints for making predictions using pre-trained models and is designed to be modular and extensible.
 
 ---
